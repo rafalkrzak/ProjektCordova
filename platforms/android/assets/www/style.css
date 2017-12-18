@@ -1,0 +1,150 @@
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+/*------------------------Menu-----------------------------*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu-items{
+    width: auto;
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.topnav a:first-child{
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav .menu-items a{
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topnav.responsive .menu-items{
+        width: 100%;
+    }
+
+}
+/*------------------------Tabela z planem-----------------------------*/
+#plan{
+    margin-top: 50px;
+}
+
+#plan table{
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    min-width: 768px;
+}
+
+#plan td{
+    text-align: center;
+}
+
+#plan thead{
+    background-color: #0F0F0F;
+    font-size: 16px;
+    color: beige;
+}
+
+#plan th,td{
+    padding: 15px 0;
+}
+
+#plan tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+#plan tbody tr:hover{
+    background-color: bisque;
+}
+/*------------------------Rejestracja-----------------------------*/
+#rejestracja #formularz{
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+#rejestracja label{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 50px 0 10px 0;
+}
+
+#rejestracja input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    -webkit-transition:150ms ease-in-out;
+    transition:150ms ease-in-out;
+}
+#rejestracja input:focus{
+    border-bottom: 1px solid #000;
+}
+#rejestracja input:hover{
+    border-bottom: 1px solid #000;
+}
+#rejestracja button{
+    border: none;
+    padding: 15px 40px;
+    margin-top: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #AAA;
+    -webkit-transition:150ms ease-in-out;
+    transition:150ms ease-in-out;
+    font-family: Helvetica, sans-serif;
+}
+#rejestracja button:hover{
+    background-color: #222;
+    color: #FFF;
+}
+#rejestracja p.komunikat{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}

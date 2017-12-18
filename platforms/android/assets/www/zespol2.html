@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Plan zajęć</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<nav class="topnav" id="myTopnav">
+    <div class="container">
+        <a href="index.html">Plan zajęć</a>
+        <div class="menu-items">
+            <a href="index.html">Zespół 1</a>
+            <a href="zespol2.html">Zespół 2</a>
+            <a href="zespol3.html">Zespół 3</a>
+            <a href="index.html">Logowanie</a>
+            <a href="index.html">Rejestracja</a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="pokazMenu()">&#9776;</a>
+    </div>
+</nav>
+
+    <section id="plan" style="overflow-x:auto;">
+        <div class="container">
+            <table style="overflow-x:auto;">
+                <thead>
+                    <tr>
+                        <th>
+                            Godzina
+                        </th>
+                        <th>
+                            Poniedziałek
+                        </th>
+                        <th>
+                            Wtorek
+                        </th>
+                        <th>
+                            Środa
+                        </th>
+                        <th>
+                            Czwartek
+                        </th>
+                        <th>
+                            Piątek
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            7:30-9:00
+                        </td>
+                        <td>
+                            Informatyka
+                        </td>
+                        <td>
+                            Informatyka
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Geografia
+                        </td>
+                        <td>
+                            J. Geografia
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9:15-10:45
+                        </td>
+                        <td>
+                            Bilogia
+                        </td>
+                        <td>
+                            Chemia
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Fizyka
+                        </td>
+                        <td>
+                            Fizyka
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            11:00-12:30
+                        </td>
+                        <td>
+                            Fizyka
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            Przyroda
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Geografia
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12:45-14:15
+                        </td>
+                        <td>
+                            J. angielski
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            J. polski
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Informtyka
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            14:30-16:00
+                        </td>
+                        <td>
+                            Chemia
+                        </td>
+                        <td>
+                            Chemia
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Biologia
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            16:15-17:45
+                        </td>
+                        <td>
+                            Matematyka
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Historia
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+<script>
+    function pokazMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
