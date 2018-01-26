@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan zajęć</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plan zajęć - logowanie</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
                 <a href="index.html">Zespół 1</a>
                 <a href="zespol2.html">Zespół 2</a>
                 <a href="zespol3.html">Zespół 3</a>
-            <a href="wydarzenia.html">Wydarzenia</a>
+                <a href="wydarzenia.html">Wydarzenia</a>
                 <a href="logowanie.html">Logowanie</a>
                 <a href="rejestracja.html">Rejestracja</a>
             </div>
@@ -25,7 +25,7 @@
         </div>
     </nav>
 
-    <section id="rejestracja">
+    <section id="register">
         <div class="container">
             <form method="POST" action="logowanie.php" id="formularz">
                 <label><b>Email</b></label>
@@ -44,16 +44,7 @@
     </section>
     
 
-<script>
-    function pokazMenu() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
+<script src="js/menu.js"></script>
 
 </body>
 </html>

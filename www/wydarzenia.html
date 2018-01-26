@@ -1,29 +1,16 @@
 <html>
-
 <head>
-    <title>Full Screen Example</title>
+    <title>Plan zajęć - wydarzenia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
-    <!--CSS--->
-    <link href="main.css" rel="stylesheet" />
-
-
-
-    <!--Plugins--->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
-    
-    <script src="itemslide.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
-
-    <!--Scripts--->
-    <script src="sliding.js"></script>
-
+    <script src="js/itemslide.js"></script>
+    <script src="js/sliding.js"></script>
 </head>
 
 <body>
@@ -43,6 +30,15 @@
 </nav>
 
     <div id="frame">
+        <div class="sub-menu"  style="overflow-x:auto;">
+            <a href="javascript:void(0);" class="active">1</a>
+            <a href="javascript:void(0);">2</a>
+            <a href="javascript:void(0);">3</a>
+            <a href="javascript:void(0);">4</a>
+            <a href="javascript:void(0);">5</a>
+            <a href="javascript:void(0);">6</a>
+        </div>
+        
         <ul>
             <li>
                 <h2>Analiza matematyczna</h2>
@@ -50,7 +46,7 @@
                 <p>Całki i pochodne<br>22.01.2018 - 9:15</p>
             </li>
             <li>
-                    <h2>Programowanie obiektowe</h2>
+                <h2>Programowanie obiektowe</h2>
                 <p>Egzamin</p>
                 <p>Egzamin z wykładów - I termin<br>29.01.2018 - 11:00</p>
             </li>
@@ -64,19 +60,19 @@
                 <p>Wejściówka</p>
                 <p>Podstawy systemu linux<br>25.01.2018 - 7:30</p>
             </li>
+            <li>
+                <h2>Technologie obróbki</h2>
+                <p>Sprawozdanie</p>
+                <p>Obróbka elektoerozyjna<br>23.01.2018 - 7:30</p>
+            </li>
+            <li>
+                <h2>Systemy multimedialne</h2>
+                <p>Projekty</p>
+                <p>Timelapse oraz wideo tutorial<br>25.01.2018 - 7:30</p>
+            </li>
         </ul>
     </div>
     
-    <script>
-    function pokazMenu() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
+    <script src="js/menu.js"></script>
 </body>
-
 </html>

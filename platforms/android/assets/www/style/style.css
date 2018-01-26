@@ -2,6 +2,7 @@
     max-width: 1160px;
     margin: 0 auto;
 }
+
 /*------------------------Menu-----------------------------*/
 .topnav {
     overflow: hidden;
@@ -67,6 +68,7 @@
     }
 
 }
+
 /*------------------------Tabela z planem-----------------------------*/
 #plan{
     margin-top: 50px;
@@ -99,20 +101,22 @@
 #plan tbody tr:hover{
     background-color: bisque;
 }
-/*------------------------Rejestracja-----------------------------*/
-#rejestracja #formularz{
+
+/*------------------------Rejestracja oraz logowanie-----------------------------*/
+#register #formularz{
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
 }
-#rejestracja label{
+
+#register label{
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     display: block;
     margin: 50px 0 10px 0;
 }
 
-#rejestracja input{
+#register input{
     box-sizing: border-box;
     width: 100%;
     padding: 10px 0;
@@ -122,13 +126,16 @@
     -webkit-transition:150ms ease-in-out;
     transition:150ms ease-in-out;
 }
-#rejestracja input:focus{
+
+#register input:focus{
     border-bottom: 1px solid #000;
 }
-#rejestracja input:hover{
+
+#register input:hover{
     border-bottom: 1px solid #000;
 }
-#rejestracja button{
+
+#register button{
     border: none;
     padding: 15px 40px;
     margin-top: 40px;
@@ -139,12 +146,89 @@
     transition:150ms ease-in-out;
     font-family: Helvetica, sans-serif;
 }
-#rejestracja button:hover{
+
+#register button:hover{
     background-color: #222;
     color: #FFF;
 }
-#rejestracja p.komunikat{
+
+#register p.komunikat{
     margin-top: 10px;
     font-size: 16px;
     font-family: Helvetica, sans-serif;
+}
+
+/*----------------Wydarzenia----------------------*/
+#frame
+{
+    position:fixed;
+    height:100vh;/*150vh*/
+    width:100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Helvetica, sans-serif;
+}
+
+
+#frame ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left:0;
+
+    height:100vh;
+    list-style-type: none;
+    -webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#frame li:nth-child(odd) {
+    background-color: #bbb;
+}
+
+#frame li {
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    width: 100vw;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    color: #333;
+}
+
+
+#frame h2{
+    font-size: 36px;
+    margin: 30px 0 30px 0;
+}
+
+#frame p{
+    font-size: 22px;
+    line-height: 40px;
+}
+
+#frame .sub-menu{
+    width: 100%;
+    background-color: #555;
+    text-align: center; 
+}
+
+#frame a{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+#frame a.active{
+    color: #eee;
 }
